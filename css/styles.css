@@ -1,0 +1,464 @@
+/* Establece la fuente predeterminada para todo el documento */
+body,
+h1,
+h2,
+h3,
+p,
+a,
+label,
+input,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-image: url('../images/Background/background.jpg');
+  background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
+  background-repeat: no-repeat; /* Esto evita que la imagen se repita */
+  background-attachment: fixed; /* Esto asegura que la imagen de fondo se mantenga fija al hacer scroll */
+  background-position: center; /* Esto centra la imagen de fondo */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  position: fixed; /* Fija la barra de navegación en la parte superior de la ventana */
+  top: 0;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  display: flex; /* Utiliza flexbox para distribuir los elementos */
+  justify-content: center !important; /* Distribuye uniformemente los elementos a lo largo del eje principal */
+  align-items: center !important; /* Centra verticalmente los elementos */
+  background-color: #f8f9fa; /* Color de fondo */
+  padding: 10px 10px 10px 10px; /* Espaciado interior */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.navbar-logo img {
+  height: 50px; /* Establece la altura del logo */
+}
+
+.navbar-list {
+  list-style-type: none; /* Quita los estilos de lista */
+  display: flex; /* Utiliza flexbox para distribuir los elementos */
+}
+
+.navbar-list li {
+  margin-right: 40px; /* Espaciado entre elementos de la lista */
+  margin-top: 20px; /* Espaciado sobre los elementos de la lista */
+}
+
+.navbar-list li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento de la lista */
+}
+
+.btn.navbar-btn {
+  background-color: orange; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interior del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade bordes redondeados al botón */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn.navbar-btn:hover {
+  background-color: rgb(
+    187,
+    111,
+    17
+  ); /* Cambia el color de fondo del botón al pasar el cursor */
+}
+
+/* Estilos para el banner */
+.banner {
+  position: relative; /* Establece la posición relativa para los elementos absolutamente posicionados dentro */
+  height: 420px; /* Establece la altura del banner */
+}
+
+.banner h1 {
+  position: absolute; /* Posiciona el título absolutamente */
+  top: 50%; /* Alinea el título verticalmente en el centro */
+  left: 50%; /* Alinea el título horizontalmente en el centro */
+  transform: translate(-50%, -50%); /* Centra el título correctamente */
+  margin: 0; /* Elimina el margen del título */
+}
+
+h1 {
+  font-weight: bold; /* Establece la negrita */
+  color: white; /* Establece el color blanco */
+}
+
+.banner img {
+  width: 100%; /* Ajusta la imagen para llenar el contenedor */
+  height: 100%; /* Ajusta la imagen para llenar el contenedor */
+  object-fit: cover; /* Escala la imagen mientras mantiene su relación de aspecto y cubre todo el contenedor */
+}
+
+/* Estilos para el título H con línea a su lado derecho */
+.titulo-H {
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-top: 30px; /* Margen superior */
+  margin-bottom: 50px; /* Margen inferior */
+  margin-left: 200px; /* Margen izquierdo */
+  margin-right: 200px; /* Margen derecho */
+}
+
+.titulo-H h2 {
+  margin-top: 25px;
+  margin-right: auto; /* Mueve el título H2 hacia la izquierda */
+  font-weight: bold;
+}
+
+.linea-horizontal-derecha {
+  flex-grow: 1; /* Hace que la línea horizontal ocupe todo el espacio disponible */
+  border-top: 1px solid black; /* Línea horizontal */
+  margin-left: 80px; /* Margen izquierdo */
+}
+
+/* Estilos para el contenido de la galería */
+.contenido-galeria {
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para el contenido de detalle */
+.contenido-detalle {
+  display: flex; /* Utiliza flexbox para distribuir los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin: 100px auto; /* Margen */
+  max-width: 800px; /* Ancho máximo */
+}
+
+/* Establece un ancho máximo para la columna de la imagen */
+.contenido-detalle img {
+  flex: 1; /* Hace que la imagen ocupe todo el espacio disponible */
+  max-width: 50%; /* Establece un ancho máximo para la imagen */
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.texto {
+  flex: 1; /* Hace que el texto ocupe todo el espacio disponible */
+  margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+.texto p {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.btn-orange{
+  width: 160px; /* Ancho del botón */
+  padding: 10px 20px; /* Espaciado interior del botón */
+  background-color: orange; /* Color de fondo del botón */
+  color: white; /*
+color del texto del botón */
+border: none; /* Elimina el borde del botón */
+border-radius: 5px; /* Añade bordes redondeados al botón */
+text-decoration: none; /* Quita la decoración de texto predeterminada */
+text-align: center; /* Centra el texto horizontalmente */
+}
+
+.primario-btn:hover {
+background-color: rgb(
+  187,
+  111,
+  17
+); /* Cambia el color de fondo del botón al pasar el cursor */
+}
+
+/* Estilos para el texto H3 */
+.texto-h3 {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+max-width: calc(100% - 600px);
+position: relative;
+font-weight: bold;
+}
+
+.texto-h3 h3 {
+z-index: 1;
+margin-top: 45px;
+font-weight: bold;
+}
+
+.linea-lateral {
+height: 1px;
+background-color: black;
+width: calc(
+  50% - 120px
+); /* Ancho de la línea para mantenerla dentro del contenedor */
+margin-top: 0.5em; /* Espaciado entre las líneas y el texto */
+position: absolute; /* Ajuste para las líneas */
+}
+
+.izquierda {
+left: 0; /* Alinear la línea izquierda con el borde izquierdo del contenedor */
+}
+
+.derecha {
+right: 0; /* Alinear la línea derecha con el borde derecho del contenedor */
+}
+
+/* Estilos para el rectángulo */
+.rectangulo {
+background-color: #ccc; /* Color de fondo */
+padding: 20px; /* Espaciado interior */
+margin-top: 100px; /* Margen superior */
+margin-bottom: 50px; /* Margen inferior */
+margin-left: 25%; /* Margen izquierdo */
+margin-right: 25%; /* Margen derecho */
+}
+
+.contenido-rectangulo {
+display: flex; /* Utiliza flexbox para distribuir los elementos */
+justify-content: space-between; /* Espacia uniformemente los elementos */
+align-items: center; /* Centra verticalmente los elementos */
+}
+
+.texto {
+flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+.contenido-rectangulo .texto p {
+max-width: 100%; /* Ancho máximo */
+margin: 0 0 25px; /* Margen inferior */
+}
+
+.contenido-rectangulo .btn {
+width: 150px; /* Ancho del botón */
+margin-top: 10px; /* Margen superior */
+}
+
+.img-container img {
+max-width: 100%; /* Establece un ancho máximo para la imagen */
+margin-left: 25px;
+height: auto; /* Ajusta la altura automáticamente */
+margin-left: 10px;
+margin-right: 10px;
+}
+
+/* Estilos para el footer */
+.footer {
+background-color: #f2f2f2;
+padding: 20px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.footer-left {
+display: flex;
+align-items: center;
+}
+
+.footer-center {
+text-align: center;
+}
+
+.footer-right {
+display: flex;
+align-items: center;
+}
+
+.footer-logo {
+width: 100px;
+height: auto;
+}
+
+.footer-email {
+margin-left: 10px;
+}
+
+.social-icon {
+margin-left: 10px;
+}
+
+.social-icon img {
+width: 30px;
+height: 30px;
+}
+
+/* Estilo para párrafos centrados */
+.parrafo-centrado {
+text-align: left; /* Alinea el texto a la izquierda */
+margin: 0 auto 50px; /* Margen */
+max-width: 800px; /* Ancho máximo */
+}
+
+/* Estilos para las imágenes de la galería */
+.galeria-imagenes {
+display: flex; /* Utiliza flexbox para distribuir los elementos */
+justify-content: center; /* Centra horizontalmente los elementos */
+gap: 25px; /* Espaciado entre imágenes */
+height: 100%; /* Altura del contenedor */
+width: 100%; /* Ancho del contenedor */
+}
+
+.galeria-imagenes img {
+width: 300px; /* Establece el ancho de la imagen */
+height: 300px; /* Establece la altura de la imagen */
+object-fit: cover; /* Para mantener la relación de aspecto y recortar las imágenes si es necesario */
+margin-right: 20px; /* Agrega un margen a la derecha de cada imagen */
+}
+
+.galeria-imagenes img:last-child {
+margin-right: 0; /* Elimina el margen derecho del último elemento de la fila */
+}
+
+.galeria-imagenes {
+flex-direction: row; /* Coloca las imágenes en fila */
+align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilos para los perfiles */
+.Perfil {
+display: flex; /* Utiliza flexbox para distribuir los elementos */
+align-items: center; /* Centra verticalmente los elementos */
+}
+
+.Perfil-img {
+width: 100px; /* Ancho de la imagen del perfil */
+height: 100px; /* Altura de la imagen del perfil */
+}
+
+.btn-linkedin {
+display: block; /* Muestra el enlace como bloque */
+margin-top: 10px; /* Margen superior */
+}
+
+.separador {
+width: 80%; /* Ancho del separador */
+height: 1px; /* Altura del separador */
+background-color: black; /* Color del separador */
+margin: 20px auto; /* Margen */
+}
+
+/* Estilos para el formulario de contacto */
+.contact-container {
+background-color: #f0f0f0; /* Color de fondo */
+padding: 30px; /* Espaciado interior */
+border-radius: 5px; /* Bordes redondeados */
+margin-top: 30px;
+margin-left: auto; /* Margen izquierdo automático */
+margin-bottom: 45px;
+width: 35%; /* Ancho del contenedor */
+}
+
+.contact-container label,
+.contact-container input,
+.contact-container button {
+display: block; /* Muestra los elementos como bloques */
+margin-bottom: 10px; /* Margen inferior */
+}
+
+.contact-container label {
+font-weight: bold; /* Establece el peso de la fuente */
+}
+
+.contact-container input,
+.contact-container button {
+width: 100%; /* Ancho completo */
+padding: 10px; /* Espaciado interior */
+border: 1px solid #ddd; /* Borde */
+border-radius: 5px; /* Bordes redondeados */
+}
+
+.contact-container button {
+background-color:
+orange; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Elimina el borde */
+}
+
+.contact-container button:hover {
+  background-color: rgb(
+    187,
+    111,
+    17
+  ); /* Cambia el color de fondo del botón al pasar el cursor */
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 24px; /* Tamaño de fuente */
+  }
+
+  .titulo-H {
+    margin-left: 20px; /* Margen izquierdo */
+    margin-right: 20px; /* Margen derecho */
+  }
+
+  .linea-horizontal-derecha {
+    margin-left: 20px; /* Margen izquierdo */
+    margin-right: 20px; /* Margen derecho */
+  }
+
+  .contenido-detalle {
+    margin: 50px 20px; /* Margen */
+  }
+
+  .contenido-rectangulo p {
+    margin-left: 20px; /* Margen izquierdo */
+    margin-right: 20px; /* Margen derecho */
+  }
+
+  .rectangulo {
+    margin-left: 5%; /* Margen izquierdo */
+    margin-right: 5%; /* Margen derecho */
+  }
+
+  /* Estilos para el footer */
+  footer {
+    display: flex; /* Utiliza flexbox para distribuir los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 20px; /* Espaciado interior */
+    background-color: #f2f2f2; /* Color de fondo */
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .social-icon {
+    margin: 0 10px; /* Margen */
+  }
+
+  /* Media query para pantallas más pequeñas */
+  @media screen and (max-width: 320px) {
+    footer {
+      flex-direction: column; /* Cambia la dirección a columna */
+      align-items: flex-start; /* Alinea los elementos a la izquierda */
+      text-align: left; /* Alinea el texto a la izquierda */
+    }
+  }
+  .galeria-imagenes {
+    flex-direction: column; /* Coloca las imágenes en columna */
+  }
+
+  .galeria-imagenes img {
+    max-width: 100%; /* Establece un ancho máximo para las imágenes */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+}
+
+/* Estilos para el contenedor del carrusel */
+.carousel-container {
+  max-width: 800px; /* Establece un ancho máximo para el contenedor del carrusel */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Nuevos estilos para centrar el formulario */
+.contact-container {
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+}
